@@ -14,6 +14,7 @@ app.use(express.json());
 
 app.set("view engine", "ejs");
 app.set("views", "views");
+
 app.use(authRoute);
 
 app.get("/", homeController);
