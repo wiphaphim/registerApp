@@ -29,7 +29,7 @@ mongoose
     console.log("Database Connected!");
   })
   .catch(() => {
-    console.log("Connot to Database!!!");
+    console.log("Cannot to Database!!!");
   });
 
 

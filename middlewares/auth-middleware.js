@@ -5,7 +5,7 @@ module.exports = (req, res, next) => {
             .get("Cookie")
             .spilt("token=")[1]
             .trim()
-        jwt.verify(token, "SECRETKEY")
+        jwt.verify(token, "SECRETKEY")  //* 
         next()
     } catch (error) {
         res.status(401).render("login", {
